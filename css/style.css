@@ -38,18 +38,11 @@ img {
     clear: both;
 }
 
-.bg-white {
-    width: 60%;
-    max-width: 60%;
-    height: 100%;
-    margin: 0 auto;
-    background-color: white;
-}
-
 .container {
-    width: 80%;
-    max-width: 85%;
-    margin: 0 auto;
+    width: 60%;
+    margin:0 auto;
+    background-color: white;
+    padding:0 5%;
 }
 
 .float {
@@ -131,13 +124,13 @@ img {
 }
 
 .img-container {
-    position: relative;
+    position: relative; /* per il before */
     height: 100px;
     border-radius: 1em;
     overflow: hidden;
 }
 
-.content-imgs {
+.img-container > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
