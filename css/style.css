@@ -56,6 +56,17 @@ img {
     float: left;
 }
 
+/* LAYOVER */
+.layover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .2);
+}
+
 /* HEADER */
 .logo {
     width: auto;
@@ -80,9 +91,22 @@ img {
 
 /* MAIN-BANNER */
 .banner {
-    height: 210px;
-    background-color: #ebe840;
+    position: relative;
+    height: 250px;
+    border-radius: 1em;
+    overflow: hidden;
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
     margin-bottom: 1.3%;
+}
+
+.banner-text {
+    position: absolute;
+    bottom: 2.7em;
+    left: 2em;
+    width: 60%;
+    color: white;
 }
 
 /* MAIN-SECTION2 */
